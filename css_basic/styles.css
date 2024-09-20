@@ -1,21 +1,21 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Ensures the body takes up the full viewport height */
+    height: 
 }
 
 main {
     display: flex;
     flex-direction: row;
-    flex: auto; /* Allows main to grow and shrink as needed */
+    flex: auto; 
 }
 
 article {
     flex: 2;
-    overflow-y: auto; /* Enables vertical scrolling if needed */
+    overflow-y: auto; 
 }
 
 aside {
     flex: 1;
-    overflow-y: auto; /* Enables vertical scrolling if needed */
+    overflow-y: auto; 
 }
