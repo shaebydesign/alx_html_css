@@ -1,0 +1,303 @@
+
+:root {
+    --radial-bg: radial-gradient(85.9% 85.9% at 50% 14.1%, rgb(41, 48, 61) 0%, var(--dark-blue) 100%);
+    --rose: #C271FF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #979797;
+    --dark-blue: #071629;
+}
+
+html {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+body,
+header,
+main,
+footer,
+div,
+section {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background:  url("media/Object.png");
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+blockquote,
+p,
+button,
+a {
+    font-family: 'Source Sans Pro';
+    color: inherit;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+button {
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: var(--black) 0 2px 3px;
+    cursor: pointer;
+}
+
+.bg-rose {
+    background-color: var(--rose);
+}
+
+.bg-white {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.color-rose {
+    color: var(--rose);
+    font-weight: bold;
+}
+
+.color-grey {
+    color: var(--grey);
+}
+
+/* HEADER CSS */
+header {
+    padding: 2rem 3rem;
+
+    nav {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        >* {
+            flex: 2;
+            box-sizing: border-box;
+            max-width: fit-content;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    text-decoration: none;
+                }
+
+                a:visited,
+                a:active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* END HEADER'S CSS */
+
+/* MAIN AND FOOTER CSS */
+main, footer {
+
+    .flex-col,
+    .flex-row {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    span {
+        margin-inline: 1rem;
+    }
+    span.color-rose {
+        margin-inline: 0;
+    }
+    section {
+        padding: 0 4rem;
+        margin: 0;
+    }
+
+    div {
+        padding: 3rem 0rem;
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 100;
+        font-style: normal;
+        margin-top: 3rem;
+    }
+
+    .pros {
+        div {
+            margin-inline: 2rem;
+            >* {
+                margin: 1rem 0;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+        >* {
+            flex: 1;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    blockquote, h3 {
+        font-style: normal;
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    blockquote {
+        font-style: normal;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    .quotes {
+        p {
+            font-style: italic;
+        }
+
+        div {
+            padding-inline: 2rem;
+        }
+        .flex-row {
+            flex: 1;
+            justify-content: flex-end;
+        }
+        .flex-col {
+            align-items: flex-start;
+            flex: 2;
+        }
+    }
+
+    .tutors {
+        .tutor-card {
+            max-width: 255px;
+            margin-inline: 2rem;
+            * {
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+            }
+            >h3, .phillip, .ratings, p {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+        
+        .phillip {
+            justify-content: left;
+            >h4 {
+                margin-inline: 0.5rem;
+            }
+            img {
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+        .star-icon {
+            max-width: 15px;
+            max-height: 15px;
+        }
+        .ratings {
+            justify-content: space-between;
+        }
+        .play-button-top {
+            position: relative;
+            left: 96px;
+            top: -120px;
+            max-width: 64px;
+            max-height: 64px;
+            padding: 0;
+            margin-bottom: -64px;
+        }
+    }
+    .membership {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .flex-col {
+            width: 250px;
+            >* {
+                margin-block: 1rem;
+            }
+            p {
+                max-width: 200px;
+            }
+        }
+    }
+    .faq {
+        .flex-row {
+            >div {
+                width: 500px;
+                margin: 0 3rem 1rem 3rem;
+            }
+        }
+        p {
+            color: var(--grey);
+            padding-top: 1rem;
+        }
+    }
+
+    .footer {
+        padding-bottom: 2rem;
+        p {
+            color: var(--grey);
+        }
+        .flex-row {
+            justify-content: space-between;
+            width: 100%;
+        }
+        .socials>img {
+            margin-inline: 0.5rem;
+            width: 30px;
+        }
+    }
+}
+
+/* END OF MAIN AND FOOTER CSS*/
