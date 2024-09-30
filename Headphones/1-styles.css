@@ -1,0 +1,97 @@
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a:hover, a:active {
+    color: #FF6565;
+}
+button:hover, button:active {
+    opacity: 0.9;
+}
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+}
+
+nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+body{
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-repeat: repeat-x;
+}
+
+.Leading {
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.Leading h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.Leading button {
+    display: flex;
+    padding: 8px 10px;
+    margin-left: 45%;
+    color: white;
+    border-radius: 20px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: #FF6565;
+    border-color: #FF6565;
+    cursor: pointer;
+}
+
+.we-do{
+    height: 100vh;
+}
+
+.Do h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.Do p {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.Does {
+    display: flex;
+    margin: 10px;
+    padding: 40px;
+}
+
+.Does h3 {
+    font-weight: bold;
+}
+
